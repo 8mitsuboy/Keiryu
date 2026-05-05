@@ -1,14 +1,21 @@
 {
   "name": "keiryu",
   "displayName": "Keiryu",
-  "description": "自然の渓流をテーマにしたダークカラーテーマ — 苔・水面・木漏れ日",
+  "description": "渓流をテーマにしたダークカラーテーマ",
   "version": "0.1.0",
   "publisher": "8mitsuboy",
   "engines": {
     "vscode": "^1.80.0"
   },
-  "categories": ["Themes"],
-  "keywords": ["theme", "dark", "japanese", "nature", "gruvbox", "everforest"],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "japanese",
+    "nature"
+  ],
   "contributes": {
     "themes": [
       {
