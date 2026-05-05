@@ -2,5 +2,7 @@ node_modules/
 out/
 *.js
 *.js.map
+*.vsix
 .DS_Store
 .env
+.superpowers/
