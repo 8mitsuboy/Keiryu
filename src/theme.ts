@@ -27,6 +27,28 @@ export const workbenchColors: Record<string, string> = {
   'editorIndentGuide.background1':            p.bgBorder,
   'editorIndentGuide.activeBackground1':      p.lineNumber,
 
+  // 括弧ペア色分け
+  'editorBracketHighlight.foreground1':       p.fgMuted,
+  'editorBracketHighlight.foreground2':       p.yellow,
+  'editorBracketHighlight.foreground3':       p.aqua,
+  'editorBracketHighlight.foreground4':       p.orange,
+  'editorBracketHighlight.foreground5':       p.purple,
+  'editorBracketHighlight.foreground6':       p.green,
+  'editorBracketHighlight.unexpectedBracket.foreground': p.red,
+  'editorBracketPairGuide.activeBackground1': p.fgMuted,
+  'editorBracketPairGuide.activeBackground2': p.yellow,
+  'editorBracketPairGuide.activeBackground3': p.aqua,
+  'editorBracketPairGuide.activeBackground4': p.orange,
+  'editorBracketPairGuide.activeBackground5': p.purple,
+  'editorBracketPairGuide.activeBackground6': p.green,
+  'editorBracketPairGuide.background1':       p.bgBorder,
+  'editorBracketPairGuide.background2':       p.bgBorder,
+  'editorBracketPairGuide.background3':       p.bgBorder,
+  'editorBracketPairGuide.background4':       p.bgBorder,
+  'editorBracketPairGuide.background5':       p.bgBorder,
+  'editorBracketPairGuide.background6':       p.bgBorder,
+  'editorBracketMatch.foreground':            p.yellow,
+
   // アクティビティバー
   'activityBar.background':                   p.bgActivity,
   'activityBar.foreground':                   p.fg,
@@ -36,7 +58,7 @@ export const workbenchColors: Record<string, string> = {
   'activityBarBadge.foreground':              p.bgHard,
 
   // サイドバー
-  'sideBar.background':                       p.bgSidebar,
+  'sideBar.background':                       p.bg,
   'sideBar.foreground':                       p.fg,
   'sideBar.border':                           p.bgBorder,
   'sideBarTitle.foreground':                  p.fgMuted,
@@ -45,28 +67,28 @@ export const workbenchColors: Record<string, string> = {
   'sideBarSectionHeader.border':              p.bgBorder,
 
   // タブ
-  'editorGroupHeader.tabsBackground':         p.bgActivity,
+  'editorGroupHeader.tabsBackground':         p.bg,
   'tab.activeBackground':                     p.bg,
   'tab.activeForeground':                     p.fg,
   'tab.activeBorderTop':                      p.yellow,
-  'tab.inactiveBackground':                   p.bgActivity,
+  'tab.inactiveBackground':                   p.bg,
   'tab.inactiveForeground':                   p.lineNumber,
   'tab.border':                               p.bgBorder,
   'tab.hoverBackground':                      p.bgSelection,
 
   // ステータスバー
-  'statusBar.background':                     p.bgActivity,
+  'statusBar.background':                     p.bg,
   'statusBar.foreground':                     p.fgMuted,
   'statusBar.border':                         p.bgBorder,
-  'statusBar.noFolderBackground':             p.bgActivity,
+  'statusBar.noFolderBackground':             p.bg,
   'statusBarItem.hoverBackground':            p.bgSelection,
   'statusBarItem.remoteBackground':           p.aqua,
   'statusBarItem.remoteForeground':           p.bgHard,
 
   // タイトルバー
-  'titleBar.activeBackground':                p.bgActivity,
+  'titleBar.activeBackground':                p.bg,
   'titleBar.activeForeground':                p.fgMuted,
-  'titleBar.inactiveBackground':              p.bgActivity,
+  'titleBar.inactiveBackground':              p.bg,
   'titleBar.border':                          p.bgBorder,
 
   // パネル（ターミナル等）

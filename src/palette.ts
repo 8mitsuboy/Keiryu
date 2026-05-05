@@ -1,11 +1,11 @@
 export const palette = {
   // 背景色（暗い順）
-  bgHard:      '#171814',
-  bgActivity:  '#191a13',  // アクティビティバー・ステータスバー・非アクティブタブ
-  bg:          '#1c1d16',  // エディタ本体（基準）
-  bgSidebar:   '#1e1f17',  // サイドバー
-  bgBorder:    '#252619',  // 境界線・区切り
-  bgSelection: '#2b2a20',  // 選択・ホバー・アクティブ行
+  bgHard:      '#171a1b',
+  bgActivity:  '#181b1c',  // アクティビティバー・ステータスバー・非アクティブタブ
+  bg:          '#1d2021',  // エディタ本体（基準）
+  bgSidebar:   '#202325',  // サイドバー
+  bgBorder:    '#2b2c2f',  // 境界線・区切り
+  bgSelection: '#2b302d',  // 選択・ホバー・アクティブ行
 
   // 前景色
   fgHard:      '#d4c9a8',
