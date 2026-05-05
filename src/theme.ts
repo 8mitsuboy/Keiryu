@@ -163,5 +163,117 @@ export const workbenchColors: Record<string, string> = {
   'notifications.foreground':                 p.fg,
 }
 
-export const tokenColors: object[] = []
-export const semanticTokenColors: Record<string, string | object> = {}
+export const tokenColors = [
+  // コメント
+  {
+    scope: ['comment', 'punctuation.definition.comment'],
+    settings: { foreground: p.comment, fontStyle: 'italic' },
+  },
+  // キーワード・制御フロー・ストレージ修飾子
+  {
+    scope: [
+      'keyword',
+      'keyword.control',
+      'keyword.operator.new',
+      'storage.type',
+      'storage.modifier',
+    ],
+    settings: { foreground: p.aqua },
+  },
+  // 関数名・メソッド名
+  {
+    scope: [
+      'entity.name.function',
+      'support.function',
+      'meta.function-call entity.name.function',
+    ],
+    settings: { foreground: p.yellow },
+  },
+  // 型名・クラス名・インターフェース名
+  {
+    scope: [
+      'entity.name.type',
+      'entity.name.class',
+      'entity.name.interface',
+      'entity.name.enum',
+      'support.type',
+      'support.class',
+    ],
+    settings: { foreground: p.yellow },
+  },
+  // 文字列リテラル
+  {
+    scope: ['string', 'string.quoted', 'string.template'],
+    settings: { foreground: p.green },
+  },
+  // 数値リテラル・真偽値・null/undefined
+  {
+    scope: [
+      'constant.numeric',
+      'constant.language.boolean',
+      'constant.language.null',
+      'constant.language.undefined',
+    ],
+    settings: { foreground: p.purple },
+  },
+  // プロパティ・パラメータ
+  {
+    scope: [
+      'variable.other.property',
+      'variable.other.object.property',
+      'variable.parameter',
+      'meta.parameters variable.other',
+    ],
+    settings: { foreground: p.orange },
+  },
+  // デコレーター
+  {
+    scope: [
+      'meta.decorator',
+      'meta.decorator entity.name.function',
+      'punctuation.decorator',
+      'meta.annotation',
+      'meta.annotation entity.name.type',
+    ],
+    settings: { foreground: p.red },
+  },
+  // 変数・識別子
+  {
+    scope: ['variable', 'variable.other'],
+    settings: { foreground: p.fg },
+  },
+  // 演算子
+  {
+    scope: ['keyword.operator'],
+    settings: { foreground: p.fgMuted },
+  },
+  // 記号・括弧
+  {
+    scope: ['punctuation', 'meta.brace'],
+    settings: { foreground: p.fg },
+  },
+]
+
+export const semanticTokenColors: Record<string, string | object> = {
+  function: p.yellow,
+  'function.declaration': p.yellow,
+  method: p.yellow,
+  'method.declaration': p.yellow,
+  class: p.yellow,
+  interface: p.yellow,
+  type: p.yellow,
+  typeParameter: p.yellow,
+  enum: p.yellow,
+  enumMember: p.purple,
+  parameter: p.orange,
+  property: p.orange,
+  variable: p.fg,
+  'variable.constant': p.purple,
+  keyword: p.aqua,
+  string: p.green,
+  number: p.purple,
+  regexp: p.green,
+  decorator: p.red,
+  namespace: p.fg,
+  macro: p.aqua,
+}
