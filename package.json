@@ -31,6 +31,8 @@
   },
   "scripts": {
     "build": "ts-node src/build.ts",
+    "debug": "npm run build && npx vsce package && code --install-extension keiryu-0.1.0.vsix --force",
+    "test": "node --test -r ts-node/register tests/theme.test.ts",
     "watch": "nodemon --watch src --ext ts --exec \"npm run build\""
   },
   "devDependencies": {

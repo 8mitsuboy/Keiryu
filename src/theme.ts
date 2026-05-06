@@ -54,7 +54,7 @@ export const workbenchColors: Record<string, string> = {
   'activityBar.foreground':                   p.fg,
   'activityBar.inactiveForeground':           p.lineNumber,
   'activityBar.border':                       p.bgBorder,
-  'activityBarBadge.background':              p.yellow,
+  'activityBarBadge.background':              p.green,
   'activityBarBadge.foreground':              p.bgHard,
 
   // サイドバー
@@ -70,7 +70,7 @@ export const workbenchColors: Record<string, string> = {
   'editorGroupHeader.tabsBackground':         p.bg,
   'tab.activeBackground':                     p.bg,
   'tab.activeForeground':                     p.fg,
-  'tab.activeBorderTop':                      p.yellow,
+  'tab.activeBorderTop':                      p.green,
   'tab.inactiveBackground':                   p.bg,
   'tab.inactiveForeground':                   p.lineNumber,
   'tab.border':                               p.bgBorder,
@@ -138,18 +138,18 @@ export const workbenchColors: Record<string, string> = {
   'input.foreground':                         p.fg,
   'input.border':                             p.bgBorder,
   'input.placeholderForeground':              p.comment,
-  'inputOption.activeBorder':                 p.yellow,
+  'inputOption.activeBorder':                 p.green,
   'dropdown.background':                      p.bgSidebar,
   'dropdown.foreground':                      p.fg,
   'dropdown.border':                          p.bgBorder,
 
   // ボタン
-  'button.background':                        p.yellow,
+  'button.background':                        p.green,
   'button.foreground':                        p.bgHard,
-  'button.hoverBackground':                   p.orange,
+  'button.hoverBackground':                   p.greenSoft,
 
   // バッジ
-  'badge.background':                         p.yellow,
+  'badge.background':                         p.green,
   'badge.foreground':                         p.bgHard,
 
   // スクロールバー
@@ -158,7 +158,7 @@ export const workbenchColors: Record<string, string> = {
   'scrollbarSlider.activeBackground':         p.bgSelection,
 
   // フォーカス・ボーダー
-  'focusBorder':                              p.yellow,
+  'focusBorder':                              p.green,
   'widget.shadow':                            '#00000040',
 
   // エラー・警告・情報
@@ -200,7 +200,7 @@ export const tokenColors = [
       'storage.type',
       'storage.modifier',
     ],
-    settings: { foreground: p.aqua },
+    settings: { foreground: p.orange },
   },
   // 関数名・メソッド名
   {
@@ -209,7 +209,7 @@ export const tokenColors = [
       'support.function',
       'meta.function-call entity.name.function',
     ],
-    settings: { foreground: p.yellow },
+    settings: { foreground: p.aqua },
   },
   // 型名・クラス名・インターフェース名
   {
@@ -221,12 +221,12 @@ export const tokenColors = [
       'support.type',
       'support.class',
     ],
-    settings: { foreground: p.yellow },
+    settings: { foreground: p.purple },
   },
   // 文字列リテラル
   {
     scope: ['string', 'string.quoted', 'string.template'],
-    settings: { foreground: p.green },
+    settings: { foreground: p.aqua },
   },
   // 数値リテラル・真偽値・null/undefined
   {
@@ -246,18 +246,23 @@ export const tokenColors = [
       'variable.parameter',
       'meta.parameters variable.other',
     ],
-    settings: { foreground: p.orange },
+    settings: { foreground: p.green },
   },
   // デコレーター
   {
     scope: [
+      'entity.name.annotation',
+      'entity.name.type.annotation',
       'meta.decorator',
       'meta.decorator entity.name.function',
-      'punctuation.decorator',
       'meta.annotation',
+      'punctuation.decorator',
+      'punctuation.definition.annotation',
+      'storage.type.annotation',
+      'support.annotation',
       'meta.annotation entity.name.type',
     ],
-    settings: { foreground: p.red },
+    settings: { foreground: p.purple },
   },
   // 変数・識別子
   {
@@ -277,25 +282,27 @@ export const tokenColors = [
 ]
 
 export const semanticTokenColors: Record<string, string | object> = {
-  function: p.yellow,
-  'function.declaration': p.yellow,
-  method: p.yellow,
-  'method.declaration': p.yellow,
-  class: p.yellow,
-  interface: p.yellow,
-  type: p.yellow,
-  typeParameter: p.yellow,
-  enum: p.yellow,
+  function: p.aqua,
+  'function.declaration': p.aqua,
+  method: p.aqua,
+  'method.declaration': p.aqua,
+  class: p.purple,
+  interface: p.purple,
+  type: p.purple,
+  typeParameter: p.purple,
+  enum: p.purple,
   enumMember: p.purple,
-  parameter: p.orange,
-  property: p.orange,
+  parameter: p.green,
+  property: p.green,
   variable: p.fg,
   'variable.constant': p.purple,
-  keyword: p.aqua,
-  string: p.green,
+  keyword: p.orange,
+  string: p.aqua,
   number: p.purple,
-  regexp: p.green,
-  decorator: p.red,
+  regexp: p.aqua,
+  annotation: p.purple,
+  'annotation.declaration': p.purple,
+  decorator: p.purple,
   namespace: p.fg,
-  macro: p.aqua,
+  macro: p.purple,
 }
