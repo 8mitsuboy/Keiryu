@@ -8,8 +8,8 @@ export const workbenchColors: Record<string, string> = {
   'editor.selectionBackground':               p.bgSelection,
   'editor.inactiveSelectionBackground':       p.bgBorder,
   'editorCursor.foreground':                  p.fg,
-  'editor.findMatchBackground':               p.yellow + '55',
-  'editor.findMatchHighlightBackground':      p.yellow + '33',
+  'editor.findMatchBackground':               p.red + '55',
+  'editor.findMatchHighlightBackground':      p.red + '33',
   'editor.wordHighlightBackground':           p.bgSelection,
   'editor.wordHighlightStrongBackground':     p.bgSelection,
 
@@ -20,8 +20,8 @@ export const workbenchColors: Record<string, string> = {
   // ガター（git差分マーカー）
   'editorGutter.background':                  p.bg,
   'editorGutter.addedBackground':             p.green,
-  'editorGutter.modifiedBackground':          p.yellow,
-  'editorGutter.deletedBackground':           p.red,
+  'editorGutter.modifiedBackground':          p.red,
+  'editorGutter.deletedBackground':           p.yellow,
 
   // インデントガイド
   'editorIndentGuide.background1':            p.bgBorder,
@@ -29,16 +29,16 @@ export const workbenchColors: Record<string, string> = {
 
   // 括弧ペア色分け
   'editorBracketHighlight.foreground1':       p.fgMuted,
-  'editorBracketHighlight.foreground2':       p.yellow,
+  'editorBracketHighlight.foreground2':       p.red,
   'editorBracketHighlight.foreground3':       p.aqua,
-  'editorBracketHighlight.foreground4':       p.orange,
+  'editorBracketHighlight.foreground4':       p.red,
   'editorBracketHighlight.foreground5':       p.purple,
   'editorBracketHighlight.foreground6':       p.green,
-  'editorBracketHighlight.unexpectedBracket.foreground': p.red,
+  'editorBracketHighlight.unexpectedBracket.foreground': p.yellow,
   'editorBracketPairGuide.activeBackground1': p.fgMuted,
-  'editorBracketPairGuide.activeBackground2': p.yellow,
+  'editorBracketPairGuide.activeBackground2': p.red,
   'editorBracketPairGuide.activeBackground3': p.aqua,
-  'editorBracketPairGuide.activeBackground4': p.orange,
+  'editorBracketPairGuide.activeBackground4': p.red,
   'editorBracketPairGuide.activeBackground5': p.purple,
   'editorBracketPairGuide.activeBackground6': p.green,
   'editorBracketPairGuide.background1':       p.bgBorder,
@@ -47,7 +47,7 @@ export const workbenchColors: Record<string, string> = {
   'editorBracketPairGuide.background4':       p.bgBorder,
   'editorBracketPairGuide.background5':       p.bgBorder,
   'editorBracketPairGuide.background6':       p.bgBorder,
-  'editorBracketMatch.foreground':            p.yellow,
+  'editorBracketMatch.foreground':            p.red,
 
   // アクティビティバー
   'activityBar.background':                   p.bgActivity,
@@ -95,24 +95,24 @@ export const workbenchColors: Record<string, string> = {
   'panel.background':                         p.bg,
   'panel.border':                             p.bgBorder,
   'panelTitle.activeForeground':              p.fg,
-  'panelTitle.activeBorder':                  p.yellow,
+  'panelTitle.activeBorder':                  p.red,
   'panelTitle.inactiveForeground':            p.fgMuted,
 
   // ターミナル
   'terminal.background':                      p.bg,
   'terminal.foreground':                      p.fg,
   'terminal.ansiBlack':                       p.bgActivity,
-  'terminal.ansiRed':                         p.red,
+  'terminal.ansiRed':                         p.yellow,
   'terminal.ansiGreen':                       p.green,
-  'terminal.ansiYellow':                      p.yellow,
+  'terminal.ansiYellow':                      p.red,
   'terminal.ansiBlue':                        p.aqua,
   'terminal.ansiMagenta':                     p.purple,
   'terminal.ansiCyan':                        p.aqua,
   'terminal.ansiWhite':                       p.fg,
   'terminal.ansiBrightBlack':                 p.comment,
-  'terminal.ansiBrightRed':                   p.red,
+  'terminal.ansiBrightRed':                   p.yellow,
   'terminal.ansiBrightGreen':                 p.green,
-  'terminal.ansiBrightYellow':                p.yellow,
+  'terminal.ansiBrightYellow':                p.red,
   'terminal.ansiBrightBlue':                  p.aqua,
   'terminal.ansiBrightMagenta':               p.purple,
   'terminal.ansiBrightCyan':                  p.aqua,
@@ -127,11 +127,11 @@ export const workbenchColors: Record<string, string> = {
 
   // Git装飾
   'gitDecoration.addedResourceForeground':    p.green,
-  'gitDecoration.modifiedResourceForeground': p.yellow,
-  'gitDecoration.deletedResourceForeground':  p.red,
+  'gitDecoration.modifiedResourceForeground': p.red,
+  'gitDecoration.deletedResourceForeground':  p.yellow,
   'gitDecoration.untrackedResourceForeground':p.green,
   'gitDecoration.ignoredResourceForeground':  p.comment,
-  'gitDecoration.conflictingResourceForeground': p.orange,
+  'gitDecoration.conflictingResourceForeground': p.red,
 
   // 入力・ドロップダウン
   'input.background':                         p.bgSelection,
@@ -162,12 +162,12 @@ export const workbenchColors: Record<string, string> = {
   'widget.shadow':                            '#00000040',
 
   // エラー・警告・情報
-  'editorError.foreground':                   p.red,
-  'editorWarning.foreground':                 p.yellow,
+  'editorError.foreground':                   p.yellow,
+  'editorWarning.foreground':                 p.red,
   'editorInfo.foreground':                    p.aqua,
 
   // ピークビュー
-  'peekView.border':                          p.yellow,
+  'peekView.border':                          p.red,
   'peekViewEditor.background':                p.bgHard,
   'peekViewResult.background':                p.bgSidebar,
   'peekViewTitle.background':                 p.bgSidebar,
@@ -200,7 +200,7 @@ export const tokenColors = [
       'storage.type',
       'storage.modifier',
     ],
-    settings: { foreground: p.orange },
+    settings: { foreground: p.red },
   },
   // 関数名・メソッド名
   {
@@ -226,7 +226,7 @@ export const tokenColors = [
   // 文字列リテラル
   {
     scope: ['string', 'string.quoted', 'string.template'],
-    settings: { foreground: p.aqua },
+    settings: { foreground: p.green },
   },
   // 数値リテラル・真偽値・null/undefined
   {
@@ -236,7 +236,7 @@ export const tokenColors = [
       'constant.language.null',
       'constant.language.undefined',
     ],
-    settings: { foreground: p.purple },
+    settings: { foreground: p.fgMuted },
   },
   // プロパティ・パラメータ
   {
@@ -295,11 +295,11 @@ export const semanticTokenColors: Record<string, string | object> = {
   parameter: p.green,
   property: p.green,
   variable: p.fg,
-  'variable.constant': p.purple,
-  keyword: p.orange,
-  string: p.aqua,
-  number: p.purple,
-  regexp: p.aqua,
+  'variable.constant': p.fgMuted,
+  keyword: p.red,
+  string: p.green,
+  number: p.fgMuted,
+  regexp: p.green,
   annotation: p.purple,
   'annotation.declaration': p.purple,
   decorator: p.purple,

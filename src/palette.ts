@@ -13,13 +13,14 @@ export const palette = {
   fgMuted:     '#9b927d',
   comment:     '#666152',
   lineNumber:  '#454b3f',
-  // シンタックスカラー
-  green:     '#527860', // moss
+  // UIアクセント
   greenSoft: '#658f74', // moss hover
-  aqua:      '#3d7870', // stream
-  yellow:    '#b08830', // sunlight
-  orange:    '#c06030', // wood
-  red:       '#a85545', // maple
-  purple:    '#746b87', // mineral
+  // シンタックスカラー
+  green:     '#517860', // moss
+  aqua:      '#587d86', // stream
+  yellow:    '#a7884a', // sunlight
+  orange:    '#a96b46', // wood
+  red:       '#c04848', // maple
+  purple:    '#736985', // mineral
 } as const
 export type Palette = typeof palette
