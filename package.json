@@ -4,6 +4,10 @@
   "description": "渓流をテーマにしたダークカラーテーマ",
   "version": "0.1.0",
   "publisher": "8mitsuboy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8mitsuboy/Keiryu.git"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
