@@ -2,6 +2,7 @@
   "name": "keiryu",
   "displayName": "Keiryu",
   "description": "渓流をテーマにしたダークカラーテーマ",
+  "icon": "assets/screenshots/keiryu-icon.png",
   "version": "0.1.0",
   "publisher": "8mitsuboy",
   "repository": {
