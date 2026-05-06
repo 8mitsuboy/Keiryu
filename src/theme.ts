@@ -20,8 +20,8 @@ export const workbenchColors: Record<string, string> = {
   // ガター（git差分マーカー）
   'editorGutter.background':                  p.bg,
   'editorGutter.addedBackground':             p.green,
-  'editorGutter.modifiedBackground':          p.red,
-  'editorGutter.deletedBackground':           p.yellow,
+  'editorGutter.modifiedBackground':          p.yellow,
+  'editorGutter.deletedBackground':           p.red,
 
   // インデントガイド
   'editorIndentGuide.background1':            p.bgBorder,
@@ -102,17 +102,17 @@ export const workbenchColors: Record<string, string> = {
   'terminal.background':                      p.bg,
   'terminal.foreground':                      p.fg,
   'terminal.ansiBlack':                       p.bgActivity,
-  'terminal.ansiRed':                         p.yellow,
+  'terminal.ansiRed':                         p.red,
   'terminal.ansiGreen':                       p.green,
-  'terminal.ansiYellow':                      p.red,
+  'terminal.ansiYellow':                      p.yellow,
   'terminal.ansiBlue':                        p.aqua,
   'terminal.ansiMagenta':                     p.purple,
   'terminal.ansiCyan':                        p.aqua,
   'terminal.ansiWhite':                       p.fg,
   'terminal.ansiBrightBlack':                 p.comment,
-  'terminal.ansiBrightRed':                   p.yellow,
+  'terminal.ansiBrightRed':                   p.red,
   'terminal.ansiBrightGreen':                 p.green,
-  'terminal.ansiBrightYellow':                p.red,
+  'terminal.ansiBrightYellow':                p.yellow,
   'terminal.ansiBrightBlue':                  p.aqua,
   'terminal.ansiBrightMagenta':               p.purple,
   'terminal.ansiBrightCyan':                  p.aqua,
@@ -127,8 +127,8 @@ export const workbenchColors: Record<string, string> = {
 
   // Git装飾
   'gitDecoration.addedResourceForeground':    p.green,
-  'gitDecoration.modifiedResourceForeground': p.red,
-  'gitDecoration.deletedResourceForeground':  p.yellow,
+  'gitDecoration.modifiedResourceForeground': p.yellow,
+  'gitDecoration.deletedResourceForeground':  p.red,
   'gitDecoration.untrackedResourceForeground':p.green,
   'gitDecoration.ignoredResourceForeground':  p.comment,
   'gitDecoration.conflictingResourceForeground': p.red,
@@ -220,6 +220,36 @@ export const tokenColors = [
       'entity.name.enum',
       'support.type',
       'support.class',
+    ],
+    settings: { foreground: p.purple },
+  },
+  // JSX / TSX のタグ名
+  {
+    scope: [
+      'entity.name.tag',
+      'meta.tag entity.name.tag',
+      'meta.tag.custom entity.name.tag',
+      'support.class.component',
+    ],
+    settings: { foreground: p.orange },
+  },
+  // JSX / TSX のタグ括弧
+  {
+    scope: [
+      'punctuation.definition.tag',
+      'meta.tag punctuation',
+      'punctuation.bracket.angle',
+    ],
+
+    settings: { foreground: p.lineNumber },
+  },
+  // JSX / TSX の属性名
+  {
+    scope: [
+      'entity.other.attribute-name',
+      'entity.other.attribute-name.jsx',
+      'meta.tag.attributes entity.other.attribute-name',
+      'support.type.property-name',
     ],
     settings: { foreground: p.purple },
   },

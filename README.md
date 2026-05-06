@@ -1,20 +1,48 @@
-# Keiryu -- 渓流
+# Keiryu
 
-渓流をテーマにしたVSCodeダークカラーテーマ。
+![Keiryu Hero](./assets/screenshots/keiryu-header.png)
 
-Gruvbox / Gruvbox Material・Everforest・moegi dark vintage を参考に設計。
+**A dark VS Code theme shaped by stream, stone, moss, and late autumn light.**
 
-## カラーパレット
+Keiryu leans quiet, sharp, and atmospheric.  
+Muted backgrounds hold the frame while aqua, moss, fallen maple red, and mineral purple cut through with intent.
 
-| 名前 | 色 | 由来 |
-|------|---|------|
-| green / 苔 | `#7a9a6a` | 苔むした岩 |
-| aqua / 水面 | `#6a9080` | 渓流の水面 |
-| yellow / 木漏れ日 | `#b0945a` | 木漏れ日 |
-| orange / 土 | `#a07850` | 川辺の土 |
-| red / 紅葉 | `#a06858` | 秋の紅葉 |
-| purple / 岩影 | `#8878a0` | 岩の影 |
+## Preview
 
-## 対応言語
+TypeScript / TSX
 
-TypeScript / JavaScript・Dart を優先的に調整。その他言語も標準的なTextMateスコープに対応。
+![Keiryu TSX Preview](./assets/screenshots/screenshot_tsx.png)
+
+Dart
+
+![Keiryu Dart Preview](./assets/screenshots/screenshot_dart.png)
+
+## Palette
+
+| Name | Hex | Mood |
+| --- | --- | --- |
+| green / moss | `#517860` | damp stone, foliage, quiet structure |
+| aqua / stream | `#587d86` | cold water, motion, function focus |
+| yellow / sunlight | `#a7884a` | dry light, restrained contrast |
+| orange / earth | `#a96b46` | soil, heat, muted tension |
+| red / maple | `#c04848` | ember red, control flow, impact |
+| purple / mineral | `#736985` | shadow, rock, type presence |
+
+## Syntax Direction
+
+- Functions and methods use `aqua`
+- Keywords and control flow use `red`
+- Types, classes, and annotations use `purple`
+- JSX / TSX tag names use `orange`
+- JSX / TSX attribute names use `purple`
+- JSX / TSX tag brackets stay quieter with `lineNumber`
+- Strings, properties, and parameters use `green`
+- Numbers, booleans, and `null` stay quieter with `fgMuted`
+
+## Languages
+
+Keiryu is tuned first for:
+
+- TypeScript / JavaScript
+- TSX / React
+- Dart
