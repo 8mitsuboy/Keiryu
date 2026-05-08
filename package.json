@@ -34,6 +34,7 @@
   "scripts": {
     "build": "ts-node src/build.ts",
     "debug": "npm run build && npx vsce package && code --install-extension keiryu-0.1.0.vsix --force",
+    "release:patch": "npm version patch && npx vsce package && npx vsce publish",
     "test": "tsc --noEmit && npm run build",
     "watch": "nodemon --watch src --ext ts --exec \"npm run build\""
   },
