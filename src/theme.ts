@@ -167,7 +167,7 @@ export const workbenchColors: Record<string, string> = {
   'editorInfo.foreground':                    p.aqua,
 
   // ピークビュー
-  'peekView.border':                          p.red,
+  'peekView.border':                          p.green,
   'peekViewEditor.background':                p.bgHard,
   'peekViewResult.background':                p.bgSidebar,
   'peekViewTitle.background':                 p.bgSidebar,
