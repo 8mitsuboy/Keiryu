@@ -221,54 +221,6 @@
     },
     {
       "scope": [
-        "markup.heading.1",
-        "markup.heading.1.markdown",
-        "entity.name.section.markdown.1"
-      ],
-      "settings": {
-        "foreground": "#c04848"
-      }
-    },
-    {
-      "scope": [
-        "markup.heading.2",
-        "markup.heading.2.markdown",
-        "entity.name.section.markdown.2"
-      ],
-      "settings": {
-        "foreground": "#a96b46"
-      }
-    },
-    {
-      "scope": [
-        "markup.heading.3",
-        "markup.heading.3.markdown",
-        "entity.name.section.markdown.3"
-      ],
-      "settings": {
-        "foreground": "#a7884a"
-      }
-    },
-    {
-      "scope": [
-        "markup.heading.4",
-        "markup.heading.4.markdown",
-        "entity.name.section.markdown.4"
-      ],
-      "settings": {
-        "foreground": "#587d86"
-      }
-    },
-    {
-      "scope": [
-        "punctuation.definition.heading.markdown"
-      ],
-      "settings": {
-        "foreground": "#454b3f"
-      }
-    },
-    {
-      "scope": [
         "markup.underline.link",
         "markup.underline.link.markdown",
         "string.other.link.title.markdown",
@@ -287,6 +239,16 @@
       ],
       "settings": {
         "foreground": "#517860"
+      }
+    },
+    {
+      "scope": [
+        "markup.bold.markdown",
+        "markup.bold"
+      ],
+      "settings": {
+        "foreground": "#736985",
+        "fontStyle": "bold"
       }
     },
     {
@@ -373,6 +335,50 @@
       ],
       "settings": {
         "foreground": "#b3a990"
+      }
+    },
+    {
+      "scope": [
+        "heading.1.markdown",
+        "markup.heading.heading-1.markdown"
+      ],
+      "settings": {
+        "foreground": "#c04848"
+      }
+    },
+    {
+      "scope": [
+        "heading.2.markdown",
+        "markup.heading.heading-2.markdown"
+      ],
+      "settings": {
+        "foreground": "#a96b46"
+      }
+    },
+    {
+      "scope": [
+        "heading.3.markdown",
+        "markup.heading.heading-3.markdown"
+      ],
+      "settings": {
+        "foreground": "#a7884a"
+      }
+    },
+    {
+      "scope": [
+        "heading.4.markdown",
+        "markup.heading.heading-4.markdown"
+      ],
+      "settings": {
+        "foreground": "#736985"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#454b3f"
       }
     }
   ],

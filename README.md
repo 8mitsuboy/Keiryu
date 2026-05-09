@@ -17,6 +17,10 @@ Dart
 
 ![Keiryu Dart Preview](./assets/screenshots/screenshot_dart.png)
 
+Markdown
+
+![Keiryu Markdown Preview](./assets/screenshots/screenshot-md.png)
+
 ## Palette
 
 | Name | Hex | Mood |
@@ -25,7 +29,7 @@ Dart
 | aqua / stream | `#587d86` | cold water, motion, function focus |
 | yellow / sunlight | `#a7884a` | dry light, restrained contrast |
 | orange / earth | `#a96b46` | soil, heat, muted tension |
-| red / maple | `#c04848` | ember red, control flow, impact |
+| red / maple | `#c04848` | fallen maple red, control flow, impact |
 | purple / mineral | `#736985` | shadow, rock, type presence |
 
 ## Syntax Direction
@@ -38,6 +42,11 @@ Dart
 - JSX / TSX tag brackets stay quieter with `lineNumber`
 - Strings, properties, and parameters use `green`
 - Numbers, booleans, and `null` stay quieter with `fgMuted`
+- Markdown heading levels are separated from `h1` to `h4`
+- Markdown strong emphasis uses `purple`
+- Markdown links use `aqua`
+- Markdown inline code and fenced code use `green`
+- Markdown block quotes use `green`
 
 ## Languages
 
@@ -50,7 +59,9 @@ Keiryu is tuned first for:
 
 Markdown is also tuned with dedicated styling for:
 
-- heading levels
+- heading levels from `h1` to `h4`
+- strong emphasis
 - links
 - inline code
+- fenced code blocks
 - block quotes

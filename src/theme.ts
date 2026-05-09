@@ -253,49 +253,6 @@ export const tokenColors = [
     ],
     settings: { foreground: p.purple },
   },
-  // Markdown の見出し 1
-  {
-    scope: [
-      'markup.heading.1',
-      'markup.heading.1.markdown',
-      'entity.name.section.markdown.1',
-    ],
-    settings: { foreground: p.red },
-  },
-  // Markdown の見出し 2
-  {
-    scope: [
-      'markup.heading.2',
-      'markup.heading.2.markdown',
-      'entity.name.section.markdown.2',
-    ],
-    settings: { foreground: p.orange },
-  },
-  // Markdown の見出し 3
-  {
-    scope: [
-      'markup.heading.3',
-      'markup.heading.3.markdown',
-      'entity.name.section.markdown.3',
-    ],
-    settings: { foreground: p.yellow },
-  },
-  // Markdown の見出し 4
-  {
-    scope: [
-      'markup.heading.4',
-      'markup.heading.4.markdown',
-      'entity.name.section.markdown.4',
-    ],
-    settings: { foreground: p.aqua },
-  },
-  // Markdown の見出し記号
-  {
-    scope: [
-      'punctuation.definition.heading.markdown',
-    ],
-    settings: { foreground: p.lineNumber },
-  },
   // Markdown のリンク
   {
     scope: [
@@ -315,6 +272,11 @@ export const tokenColors = [
       'markup.raw.block.markdown',
     ],
     settings: { foreground: p.green },
+  },
+  // Markdown の強調
+  {
+    scope: ['markup.bold.markdown', 'markup.bold'],
+    settings: { foreground: p.purple, fontStyle: 'bold' },
   },
   // Markdown の引用
   {
@@ -380,6 +342,27 @@ export const tokenColors = [
   {
     scope: ['punctuation', 'meta.brace'],
     settings: { foreground: p.fg },
+  },
+  // Markdown 見出しの最終上書き
+  {
+    scope: ['heading.1.markdown', 'markup.heading.heading-1.markdown'],
+    settings: { foreground: p.red },
+  },
+  {
+    scope: ['heading.2.markdown', 'markup.heading.heading-2.markdown'],
+    settings: { foreground: p.orange },
+  },
+  {
+    scope: ['heading.3.markdown', 'markup.heading.heading-3.markdown'],
+    settings: { foreground: p.yellow },
+  },
+  {
+    scope: ['heading.4.markdown', 'markup.heading.heading-4.markdown'],
+    settings: { foreground: p.purple },
+  },
+  {
+    scope: ['punctuation.definition.heading.markdown'],
+    settings: { foreground: p.lineNumber },
   },
 ]
 
