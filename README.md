@@ -46,3 +46,11 @@ Keiryu is tuned first for:
 - TypeScript / JavaScript
 - TSX / React
 - Dart
+- Markdown
+
+Markdown is also tuned with dedicated styling for:
+
+- heading levels
+- links
+- inline code
+- block quotes

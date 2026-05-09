@@ -253,6 +253,81 @@ export const tokenColors = [
     ],
     settings: { foreground: p.purple },
   },
+  // Markdown の見出し 1
+  {
+    scope: [
+      'markup.heading.1',
+      'markup.heading.1.markdown',
+      'entity.name.section.markdown.1',
+    ],
+    settings: { foreground: p.red },
+  },
+  // Markdown の見出し 2
+  {
+    scope: [
+      'markup.heading.2',
+      'markup.heading.2.markdown',
+      'entity.name.section.markdown.2',
+    ],
+    settings: { foreground: p.orange },
+  },
+  // Markdown の見出し 3
+  {
+    scope: [
+      'markup.heading.3',
+      'markup.heading.3.markdown',
+      'entity.name.section.markdown.3',
+    ],
+    settings: { foreground: p.yellow },
+  },
+  // Markdown の見出し 4
+  {
+    scope: [
+      'markup.heading.4',
+      'markup.heading.4.markdown',
+      'entity.name.section.markdown.4',
+    ],
+    settings: { foreground: p.aqua },
+  },
+  // Markdown の見出し記号
+  {
+    scope: [
+      'markup.heading',
+      'markup.heading.markdown',
+      'entity.name.section.markdown',
+      'punctuation.definition.heading.markdown',
+    ],
+    settings: { foreground: p.lineNumber },
+  },
+  // Markdown のリンク
+  {
+    scope: [
+      'markup.underline.link',
+      'markup.underline.link.markdown',
+      'string.other.link.title.markdown',
+      'markup.link',
+    ],
+    settings: { foreground: p.aqua },
+  },
+  // Markdown のインラインコード・コードフェンス
+  {
+    scope: [
+      'markup.inline.raw',
+      'markup.inline.raw.markdown',
+      'markup.fenced_code.block.markdown',
+      'markup.raw.block.markdown',
+    ],
+    settings: { foreground: p.green },
+  },
+  // Markdown の引用
+  {
+    scope: [
+      'markup.quote',
+      'markup.quote.markdown',
+      'punctuation.definition.quote.begin.markdown',
+    ],
+    settings: { foreground: p.green, fontStyle: 'italic' },
+  },
   // 文字列リテラル
   {
     scope: ['string', 'string.quoted', 'string.template'],
