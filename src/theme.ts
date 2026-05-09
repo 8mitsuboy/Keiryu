@@ -292,9 +292,6 @@ export const tokenColors = [
   // Markdown の見出し記号
   {
     scope: [
-      'markup.heading',
-      'markup.heading.markdown',
-      'entity.name.section.markdown',
       'punctuation.definition.heading.markdown',
     ],
     settings: { foreground: p.lineNumber },
