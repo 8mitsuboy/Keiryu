@@ -1,0 +1,40 @@
+# Keiryu MDX
+
+## Preview
+
+Keiryu can style **MDX** as a writing format with embedded components.
+
+### Links
+
+- [Marketplace](https://marketplace.visualstudio.com/)
+- [GitHub](https://github.com/)
+
+### Inline Code
+
+Use `npm run build` before `npx vsce publish`.
+
+### Quote
+
+> Quiet backgrounds hold the frame.
+> Accent colors should feel delibera**te.**
+
+### Table
+
+| **Name** | **Hex** | **Role** |
+| --- | --- | --- |
+| green | `#517860` | strings |
+| aqua | `#587d86` | functions |
+| red | `#c04848` | keywords |
+| purple | `#736985` | types |
+
+#### Component
+
+<div tone="quiet">
+  MDX keeps markdown flow while allowing JSX islands.
+</div>
+
+```tsx
+export function ThemeNote(props: { tone: 'quiet' | 'sharp'; children: React.ReactNode }) {
+  return <aside data-tone={props.tone}>{props.children}</aside>
+}
+```

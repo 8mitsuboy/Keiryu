@@ -223,7 +223,9 @@
       "scope": [
         "markup.underline.link",
         "markup.underline.link.markdown",
+        "markup.underline.link.mdx",
         "string.other.link.title.markdown",
+        "string.other.link.title.mdx",
         "markup.link"
       ],
       "settings": {
@@ -234,8 +236,13 @@
       "scope": [
         "markup.inline.raw",
         "markup.inline.raw.markdown",
+        "markup.inline.raw.mdx",
+        "markup.raw.code.mdx",
+        "markup.inline.raw.code.mdx",
         "markup.fenced_code.block.markdown",
-        "markup.raw.block.markdown"
+        "markup.fenced_code.block.mdx",
+        "markup.raw.block.markdown",
+        "markup.raw.block.mdx"
       ],
       "settings": {
         "foreground": "#517860"
@@ -244,7 +251,12 @@
     {
       "scope": [
         "markup.bold.markdown",
-        "markup.bold"
+        "markup.bold.mdx",
+        "markup.bold",
+        "string.other.strong.emphasis.asterisk.mdx",
+        "string.other.strong.emphasis.underscore.mdx",
+        "string.other.strong.asterisk.mdx",
+        "string.other.strong.underscore.mdx"
       ],
       "settings": {
         "foreground": "#736985",
@@ -255,7 +267,9 @@
       "scope": [
         "markup.quote",
         "markup.quote.markdown",
-        "punctuation.definition.quote.begin.markdown"
+        "markup.quote.mdx",
+        "punctuation.definition.quote.begin.markdown",
+        "punctuation.definition.quote.begin.mdx"
       ],
       "settings": {
         "foreground": "#517860",
@@ -340,7 +354,11 @@
     {
       "scope": [
         "heading.1.markdown",
-        "markup.heading.heading-1.markdown"
+        "heading.1.mdx",
+        "markup.heading.heading-1.markdown",
+        "markup.heading.heading-1.mdx",
+        "markup.heading.atx.1.mdx",
+        "markup.heading.setext.1.mdx"
       ],
       "settings": {
         "foreground": "#c04848"
@@ -349,7 +367,11 @@
     {
       "scope": [
         "heading.2.markdown",
-        "markup.heading.heading-2.markdown"
+        "heading.2.mdx",
+        "markup.heading.heading-2.markdown",
+        "markup.heading.heading-2.mdx",
+        "markup.heading.atx.2.mdx",
+        "markup.heading.setext.2.mdx"
       ],
       "settings": {
         "foreground": "#a96b46"
@@ -358,7 +380,10 @@
     {
       "scope": [
         "heading.3.markdown",
-        "markup.heading.heading-3.markdown"
+        "heading.3.mdx",
+        "markup.heading.heading-3.markdown",
+        "markup.heading.heading-3.mdx",
+        "markup.heading.atx.3.mdx"
       ],
       "settings": {
         "foreground": "#a7884a"
@@ -367,7 +392,10 @@
     {
       "scope": [
         "heading.4.markdown",
-        "markup.heading.heading-4.markdown"
+        "heading.4.mdx",
+        "markup.heading.heading-4.markdown",
+        "markup.heading.heading-4.mdx",
+        "markup.heading.atx.4.mdx"
       ],
       "settings": {
         "foreground": "#736985"
@@ -375,7 +403,8 @@
     },
     {
       "scope": [
-        "punctuation.definition.heading.markdown"
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.heading.mdx"
       ],
       "settings": {
         "foreground": "#454b3f"

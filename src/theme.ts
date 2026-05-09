@@ -258,7 +258,9 @@ export const tokenColors = [
     scope: [
       'markup.underline.link',
       'markup.underline.link.markdown',
+      'markup.underline.link.mdx',
       'string.other.link.title.markdown',
+      'string.other.link.title.mdx',
       'markup.link',
     ],
     settings: { foreground: p.aqua },
@@ -268,14 +270,27 @@ export const tokenColors = [
     scope: [
       'markup.inline.raw',
       'markup.inline.raw.markdown',
+      'markup.inline.raw.mdx',
+      'markup.raw.code.mdx',
+      'markup.inline.raw.code.mdx',
       'markup.fenced_code.block.markdown',
+      'markup.fenced_code.block.mdx',
       'markup.raw.block.markdown',
+      'markup.raw.block.mdx',
     ],
     settings: { foreground: p.green },
   },
   // Markdown の強調
   {
-    scope: ['markup.bold.markdown', 'markup.bold'],
+    scope: [
+      'markup.bold.markdown',
+      'markup.bold.mdx',
+      'markup.bold',
+      'string.other.strong.emphasis.asterisk.mdx',
+      'string.other.strong.emphasis.underscore.mdx',
+      'string.other.strong.asterisk.mdx',
+      'string.other.strong.underscore.mdx',
+    ],
     settings: { foreground: p.purple, fontStyle: 'bold' },
   },
   // Markdown の引用
@@ -283,7 +298,9 @@ export const tokenColors = [
     scope: [
       'markup.quote',
       'markup.quote.markdown',
+      'markup.quote.mdx',
       'punctuation.definition.quote.begin.markdown',
+      'punctuation.definition.quote.begin.mdx',
     ],
     settings: { foreground: p.green, fontStyle: 'italic' },
   },
@@ -345,23 +362,52 @@ export const tokenColors = [
   },
   // Markdown 見出しの最終上書き
   {
-    scope: ['heading.1.markdown', 'markup.heading.heading-1.markdown'],
+    scope: [
+      'heading.1.markdown',
+      'heading.1.mdx',
+      'markup.heading.heading-1.markdown',
+      'markup.heading.heading-1.mdx',
+      'markup.heading.atx.1.mdx',
+      'markup.heading.setext.1.mdx',
+    ],
     settings: { foreground: p.red },
   },
   {
-    scope: ['heading.2.markdown', 'markup.heading.heading-2.markdown'],
+    scope: [
+      'heading.2.markdown',
+      'heading.2.mdx',
+      'markup.heading.heading-2.markdown',
+      'markup.heading.heading-2.mdx',
+      'markup.heading.atx.2.mdx',
+      'markup.heading.setext.2.mdx',
+    ],
     settings: { foreground: p.orange },
   },
   {
-    scope: ['heading.3.markdown', 'markup.heading.heading-3.markdown'],
+    scope: [
+      'heading.3.markdown',
+      'heading.3.mdx',
+      'markup.heading.heading-3.markdown',
+      'markup.heading.heading-3.mdx',
+      'markup.heading.atx.3.mdx',
+    ],
     settings: { foreground: p.yellow },
   },
   {
-    scope: ['heading.4.markdown', 'markup.heading.heading-4.markdown'],
+    scope: [
+      'heading.4.markdown',
+      'heading.4.mdx',
+      'markup.heading.heading-4.markdown',
+      'markup.heading.heading-4.mdx',
+      'markup.heading.atx.4.mdx',
+    ],
     settings: { foreground: p.purple },
   },
   {
-    scope: ['punctuation.definition.heading.markdown'],
+    scope: [
+      'punctuation.definition.heading.markdown',
+      'punctuation.definition.heading.mdx',
+    ],
     settings: { foreground: p.lineNumber },
   },
 ]
